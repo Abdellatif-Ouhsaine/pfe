@@ -1,0 +1,48 @@
+# ================================
+# Laravel (backend)
+# ================================
+backend/vendor/
+backend/node_modules/
+backend/.env
+backend/.env.*
+backend/storage/*.key
+backend/storage/*.txt
+backend/storage/*.log
+backend/storage/*.cache
+backend/storage/app/public/
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/public/storage
+
+# Laravel IDE Helper (optional)
+backend/_ide_helper.php
+backend/_ide_helper_models.php
+
+# ================================
+# Frontend (React/Vue/etc.)
+# ================================
+frontend/node_modules/
+frontend/.env
+frontend/.env.*
+
+# ================================
+# General / Shared
+# ================================
+*.log
+*.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.sqlite
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================================
+# Git
+# ================================
+.git/
+
