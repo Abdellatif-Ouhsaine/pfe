@@ -1,0 +1,377 @@
+
+
+body {
+  background-color: #f8f5f2;
+  color: #333;
+}
+
+.coffee-discovery-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.block-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #5c3d2e;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.block-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #b85c38;
+}
+
+/* Hero Section Styles */
+.banner-wrapper {
+  height: 460px;
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210729/pngtree-dark-brown-coffee-shots-and-coffee-restrictions-image_753290.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  position: relative;
+  border-radius: 30px;
+}
+
+.banner-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.banner-main-heading {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+}
+
+.banner-search-box {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-input-field {
+  flex: 1;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.banner-search-btn {
+  padding: 15px 30px;
+  background-color: #b85c38;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.banner-search-btn:hover {
+  background-color: #8b4513;
+}
+
+/* Featured Cafes Styles */
+.featured-brands-block {
+  margin: 60px 0;
+}
+
+.brands-display-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 25px;
+}
+
+.brand-display-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brand-display-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.brand-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.brand-display-item:hover .brand-thumbnail {
+  transform: scale(1.05);
+}
+
+.brand-text-content {
+  padding: 20px;
+}
+
+.brand-display-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5c3d2e;
+}
+
+.brand-display-desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Cafe Categories Styles */
+/* Services Section */
+.gobite-services-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.gobite-section-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .gobite-section-container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gobite-section-container {
+    padding: 0 2rem;
+  }
+}
+
+.gobite-section-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gobite-section-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.gobite-title-underline {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #ea580c;
+  border-radius: 0.125rem;
+  margin: 0 auto;
+}
+
+.gobite-section-description {
+  color: #6b7280;
+  max-width: 32rem;
+  margin: 1rem auto 0;
+}
+
+.gobite-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gobite-services-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .gobite-services-grid {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+/* Cafe List Styles */
+.shop-finder-block {
+  margin: 60px 0;
+}
+
+.shop-filter-strip {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.shop-filter-option {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.shop-filter-option:hover {
+  background-color: #e0e0e0;
+}
+
+.shop-filter-option.shop-filter-active {
+  background-color: #b85c38;
+  color: white;
+}
+
+.shop-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.shop-result-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.shop-result-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shop-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shop-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.shop-result-item:hover .shop-thumbnail {
+  transform: scale(1.05);
+}
+
+.shop-category-tag {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #b85c38;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.shop-text-content {
+  padding: 20px;
+}
+
+.shop-display-name {
+  font-size: 18px;
+  color: #5c3d2e;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .banner-main-heading {
+    font-size: 40px;
+  }
+
+  .brands-display-grid,
+  .shop-results-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-main-heading {
+    font-size: 32px;
+  }
+
+  .banner-search-box {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+
+  .banner-input-field {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .banner-search-btn {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .coffee-types-row {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 15px;
+  }
+
+  .coffee-type-pill {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-wrapper {
+    height: 450px;
+  }
+
+  .banner-main-heading {
+    font-size: 28px;
+  }
+
+  .block-title {
+    font-size: 24px;
+  }
+
+  .brands-display-grid,
+  .shop-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-filter-strip {
+    justify-content: center;
+  }
+}

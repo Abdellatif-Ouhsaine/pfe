@@ -1,0 +1,153 @@
+.container1 {
+  display: flex;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+}
+
+.sidebar1 {
+  width: 120px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  margin: 10px 0;
+
+}
+
+.sidebar-link.active {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.dashboard-conteneur {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.dashboard-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-conteneur {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  padding: 20px;
+  background-color: #f5f5dc; /* beige doux */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition lisse */
+  box-sizing: border-box; /* important pour que padding n’augmente pas la taille */
+}
+
+.dashboard-card:hover {
+  transform: scale(1, 1); /* Augmenter la taille de la carte */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ajouter une ombre plus forte */
+}
+
+.dashboard-card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card-description {
+  margin-bottom: 10px;
+}
+
+.dashboard-card-button {
+  padding: 10px 15px;
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dashboard-card-button:hover {
+  background-color: #e0a800;
+}
+
+.dashboard-card-image-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ajuste sans déformer */
+  display: block;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bell {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-navbar-link {
+  text-decoration: none;
+  color: #708090;
+  margin: 10px ;
+}
+
+.menu-navbar-active {
+  text-decoration: underline;
+  color: #708090;
+  font-weight: bold;
+}
+
+
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #e0e0e0;
+}

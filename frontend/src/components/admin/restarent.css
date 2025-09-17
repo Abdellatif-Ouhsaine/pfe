@@ -1,0 +1,80 @@
+.restaurantApp-container {
+  padding: 32px;
+  flex: 1;
+}
+
+.restaurantApp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.restaurantApp-header h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.restaurantApp-search {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 300px;
+}
+
+.restaurantApp-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.restaurantApp-table th,
+.restaurantApp-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.restaurantApp-table th {
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-weight: 600;
+}
+
+.restaurantApp-table tbody tr:hover {
+  background-color: #f0fdf4;
+}
+
+.restaurantApp-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.restaurantApp-viewBtn,
+.restaurantApp-rejectBtn {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.restaurantApp-viewBtn {
+  background-color: #10b981;
+  color: white;
+}
+
+.restaurantApp-rejectBtn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.restaurantApp-noResults {
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 16px;
+}

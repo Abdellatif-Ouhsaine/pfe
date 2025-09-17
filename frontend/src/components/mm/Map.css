@@ -1,0 +1,52 @@
+.map-section1 {
+  margin: 40px 0;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.map-title {
+  font-size: 24px;
+  color: #222;
+  margin: 0;
+}
+
+.display-cities-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.map-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #ddd;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 300px;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 250px;
+  }
+}

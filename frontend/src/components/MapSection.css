@@ -1,0 +1,71 @@
+.map-section {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.map-container {
+  flex: 2;
+  height: 300px;
+}
+
+.location-info {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.location-info h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  color: #ffc107;
+  margin-right: 5px;
+}
+
+.rating-count {
+  color: #666;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.price-range {
+  color: #666;
+  font-size: 14px;
+}
+
+.address {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.directions-link {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.directions-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 200px;
+  }
+}

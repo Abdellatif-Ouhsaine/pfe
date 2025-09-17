@@ -1,0 +1,246 @@
+.zone-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.zone-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.zone-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.zone-form input,
+.zone-form select,
+.zone-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.preview-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.table-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.table-inputs input {
+  flex: 1;
+}
+
+.tables-list {
+  margin-top: 1rem;
+}
+
+.table-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.zones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.zone-card {
+  background-color: #f5f5dc;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.zone-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.zone-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.zone-card img:hover {
+  transform: scale(1.02);
+}
+
+.zone-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.zone-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.tables-details {
+  text-align: left;
+  background-color: #f5f5f5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.table-info {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.add-zone-button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-zone-button:hover {
+  background-color: rgb(5, 74, 5);
+}
+.preview-image {
+  max-width: 100%;  /* largeur max à 100% du conteneur */
+  height: auto;     /* hauteur automatique pour garder les proportions */
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+/* Bouton d'ajout de table */
+button[type="button"] {
+  background-color: #007bff; /* Bleu vif */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Bouton Supprimer */
+button[type="button"].delete-btn {
+  background-color: #dc3545; /* Rouge (danger) */
+  margin-left: 10px;
+}
+
+button[type="button"].delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+/* Si tu veux un style plus neutre pour le bouton "Ajouter Table" */
+.table-inputs button {
+  background-color: #28a745; /* Vert pour l'action principale */
+}
+
+.table-inputs button:hover {
+  background-color: #218838;
+}
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mode modification : bouton jaune */
+.submit-btn.edit-mode {
+  background-color: #ffc107;
+  color: black;
+}
+
+.submit-btn.edit-mode:hover {
+  background-color: #e0a800;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+

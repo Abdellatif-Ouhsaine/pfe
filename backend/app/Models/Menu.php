@@ -4,17 +4,27 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-class Menu extends Model {
+
+class Menu extends Model
+{
     use HasFactory;
 
-    protected $fillable = ['nom', 'description', 'restaurant_id'];
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+        'category',
+        'discount',
+        'image',
+        'restaurant_id',
+        'type'
+    ];
 
-    public function restaurant() {
+    /**
+     * Relation avec le modèle Restaurant
+     */
+    public function restaurant()
+    {
         return $this->belongsTo(Restaurant::class);
     }
-
-    public function plats() {
-        return $this->belongsToMany(Plat::class, 'menu_plat');
-    }
 }
-

@@ -1,0 +1,199 @@
+
+/* Cartes Statistiques */
+.stats-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card.total {
+  background-color: #e9f7fd;
+}
+
+.card.available {
+  background-color: #d1ffd7;
+}
+
+.card.pending {
+  background-color: #fff5d9;
+}
+
+.card.canceled {
+  background-color: #ffe6e6;
+}
+
+.card span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Tableau des réservations */
+.reservations-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  overflow-x: auto; /* Pour gérer le débordement horizontal */
+  min-width: 800px; /* Assure-toi que le tableau reste lisible */
+}
+
+.reservations-table thead {
+  background-color: #f1f1f1;
+}
+
+.reservations-table th,
+.reservations-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.reservations-table th {
+  font-weight: bold;
+  color: #555;
+  background-color: #f1f1f1;
+  position: sticky; /* Maintient l'en-tête visible lors du scroll vertical */
+  top: 0;
+  z-index: 1;
+}
+
+.reservations-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.reservations-table td:last-child {
+  text-align: center;
+}
+
+/* Badges de statut */
+.status-badge {
+  padding: 7px 14px !important;
+  font-size: 14px !important;
+  min-width: 85px !important;
+  border-radius: 5px !important;
+}
+
+
+.status-badge.confirmed {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-badge.pending {
+  background-color: #ffc107;
+  color: white;
+}
+
+.status-badge.canceled {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Nouveaux styles pour le tableau */
+.reservations-table {
+  font-family: Arial, sans-serif;
+  border-spacing: 0;
+  border-collapse: separate;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reservations-table th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.reservations-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.reservations-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.reservations-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.reservations-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.reservations-table tbody tr:hover {
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.reservations-table td:first-child {
+  font-weight: 600;
+}
+
+.reservations-table td:last-child {
+  text-align: center;
+}
+
+/* Style pour les actions (select) */
+.status-select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+/* === Bouton / Lien vers autres pages === */
+.actions-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.btn-link {
+  padding: 0.6rem 1.2rem;
+  background-color: #ffc107;
+  color: #333;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #e0a800;
+}

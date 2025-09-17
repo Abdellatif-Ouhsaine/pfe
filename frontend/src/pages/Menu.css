@@ -1,0 +1,156 @@
+.menu-page {
+  padding: 20px 0 40px;
+}
+
+.menu-page .container {
+  padding: 0;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.menu-title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.reservation-btn {
+  padding: 10px 20px;
+}
+
+.menu-content {
+  display: grid;
+  grid-template-columns: 200px 1fr 300px;
+  gap: 20px;
+}
+
+.sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.categories-sidebar {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: sticky;
+  top: 80px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+}
+
+.categories-list li {
+  margin-bottom: 10px;
+}
+
+.categories-list span {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: var(--text-color);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.categories-list span:hover {
+  background-color: var(--light-gray);
+}
+
+.categories-list span.active {
+  background-color: #03081f;
+  color: white;
+}
+
+.menu-items-container {
+  padding: 0 10px;
+}
+
+.menu-items-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.category-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-dropdown label {
+  font-size: 14px;
+  color: #666;
+}
+
+.sort-dropdown select {
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.cart-sidebar {
+  position: sticky;
+  top: 80px;
+}
+
+.menu-logoo {
+  display: flex;
+  gap: 13px;
+  padding-bottom: 12px;
+}
+.menu-logoo img {
+  width: 20%;
+}
+
+@media (max-width: 1200px) {
+  .menu-content {
+    grid-template-columns: 180px 1fr 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-content {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .cart-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-items-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+}

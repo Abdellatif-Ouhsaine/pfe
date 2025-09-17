@@ -1,0 +1,196 @@
+.today-orders-container {
+  padding: 20px;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+.order-card {
+  background-color: #f5f5dc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.order-id {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2563eb;
+}
+
+/* Styles spécifiques pour chaque type d'ordre */
+.order-type {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.order-type.Dine-In {
+  background-color: #d1fae5; /* Vert clair pour Dine-In */
+  color: #1a734f; /* Texte vert foncé */
+}
+
+.order-type.Takeout {
+  background-color: #fff5d9; /* Jaune clair pour Takeout */
+  color: #d97706; /* Texte orange foncé */
+}
+
+.order-type.Delivery {
+  background-color: #e6f7ff; /* Bleu clair pour Delivery */
+  color: #067dc5; /* Texte bleu foncé */
+}
+
+.order-details {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.order-items {
+  margin-top: 10px;
+  border-top: 1px dashed #d1d5db;
+  padding-top: 10px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  gap: 10px;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.order-total {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111827;
+  text-align: right;
+}
+
+/* Styles pour les boutons de filtre */
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+
+.filter-button.active {
+  background-color: #e0e0e0;
+  color: #007bff;
+}
+.order-status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* STATUS COLORS */
+.order-status.pending {
+  background-color: #fff3cd; /* jaune clair */
+  color: #856404; /* texte marron */
+}
+
+.order-status.delivered {
+  background-color: #d4edda; /* vert clair */
+  color: #155724; /* texte vert foncé */
+}
+
+.order-status.cancelled {
+  background-color: #f8d7da; /* rouge clair */
+  color: #721c24; /* texte rouge foncé */
+}
+.order-card {
+  background-color: #f5f5dc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  height: 320px; /* ✅ hauteur fixe */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Conteneur scrollable des items */
+.order-items {
+  margin-top: 10px;
+  border-top: 1px dashed #d1d5db;
+  padding-top: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  max-height: 160px; /* ✅ hauteur max pour scroll */
+  padding-right: 5px; /* ✅ évite que la scroll bar cache le texte */
+}
+
+/* Style optionnel pour une scroll bar plus fine et discrète */
+.order-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.order-items::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.order-items::-webkit-scrollbar-track {
+  background: transparent;
+}
+.order-status.out {
+  background-color: #6c63ff; /* violet ou une autre couleur distinctive */
+  color: white;
+}
+.order-status.out_for_delivery {
+  background-color: #e0e7ff; /* violet très clair (comme pastel) */
+  color: #3730a3; /* violet foncé, lisible */
+}
+

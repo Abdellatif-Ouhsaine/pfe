@@ -1,0 +1,104 @@
+.partnership-requests-container {
+  padding: 32px;
+  flex: 1;
+}
+
+.requests-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.application-type-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.application-tab {
+  padding: 8px 16px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #6b7280;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.application-tab.tab-selected {
+  background-color: #f59e0b;
+  color: white;
+  border-color: #f59e0b;
+}
+
+.application-tab:hover:not(.tab-selected) {
+  background-color: #f9fafb;
+}
+
+.new-requests-checkbox-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.new-requests-checkbox-filter input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.new-requests-checkbox-filter label {
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.search-and-filter-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.search-input-container {
+  flex: 1;
+  position: relative;
+  max-width: 400px;
+}
+
+.magnifying-glass-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+}
+
+.search-input-container input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-input-container input:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.status-dropdown-filter {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.status-dropdown-filter:focus {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}

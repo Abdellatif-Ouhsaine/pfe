@@ -1,0 +1,80 @@
+.rider-applications-container {
+  padding: 32px;
+  flex: 1;
+}
+
+.rider-applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.rider-applications-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.rider-applications-header input {
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 300px;
+}
+
+.rider-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.rider-table th,
+.rider-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.rider-table th {
+  background-color: #f9fafb;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.rider-table tbody tr:hover {
+  background-color: #fef3c7;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.view-btn,
+.reject-btn {
+  padding: 6px 10px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.no-results-text {
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 16px;
+}

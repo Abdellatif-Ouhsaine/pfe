@@ -1,0 +1,28 @@
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.staff-card {
+  background-color: #f5f5dc; /* beige doux */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition lisse */
+}
+
+.staff-card:hover {
+  transform: scale(1, 1); /* Augmenter la taille de la carte */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ajouter une ombre plus forte */
+}
+
+.staff-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}

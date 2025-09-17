@@ -1,0 +1,71 @@
+.app-promo-section {
+  display: flex;
+  background-color: #5f27cd;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.promo-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.promo-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.promo-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.app-badges {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-badge {
+  display: block;
+  transition: transform 0.2s;
+}
+
+.app-badge:hover {
+  transform: scale(1.05);
+}
+
+.promo-image {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.phone-mockup {
+  max-height: 300px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .app-promo-section {
+    flex-direction: column;
+  }
+
+  .promo-content {
+    text-align: center;
+  }
+
+  .app-badges {
+    justify-content: center;
+  }
+
+  .promo-image {
+    order: -1;
+  }
+}

@@ -1,0 +1,67 @@
+.customer-favorites-section {
+  margin-bottom: 2rem;
+}
+
+.favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.favorite-item {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-image {
+  flex: 0 0 80px;
+  margin-right: 1rem;
+}
+
+.favorite-image img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.favorite-info {
+  flex: 1;
+}
+
+.favorite-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.favorite-restaurant {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-reason {
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .favorites-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,278 @@
+.restaurant-cafe1 {
+  margin: 30px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.filter-options1 {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-option1 {
+  padding: 8px 15px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-option1.active {
+  background-color: #00a651;
+  color: white;
+  border-color: #00a651;
+}
+
+/* Promotion Section */
+.promotion-cards {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  
+  /* Masquer la scrollbar pour tous les navigateurs */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.promotion-cards::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.promotion-card {
+  min-width: 300px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.promotion-image {
+  position: relative;
+  height: 180px;
+}
+
+.promotion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #00a651;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.promotion-info {
+  padding: 15px;
+  color: white;
+  position: relative;
+}
+
+.info-top {
+  transition: opacity 0.3s ease;
+}
+
+.restaurant-name {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.promotion-name {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+.promotion-price {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  position: absolute;
+    right: 12px;
+    top: 42px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.new-price {
+  color: #00ffcc;
+}
+
+/* Bouton caché au départ */
+.add-to-cart-btn1 {
+  display: none;
+  width: 100%;
+  padding: 12px;
+  background-color: #00a651;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -47px;
+}
+
+/* Hover: cacher les infos, afficher le bouton */
+.promotion-card:hover .info-top {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.promotion-card:hover .add-to-cart-btn1 {
+  display: block;
+}
+
+
+
+/* Categories Section */
+.categories-section {
+  margin-bottom: 40px;
+}
+
+.category-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+.category-cards::-webkit-scrollbar {
+  display: none;
+}
+
+
+.category-card1 {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 200px;
+  height: 220px;
+  flex: 0 0 auto;
+}
+
+.category-card1:hover {
+  transform: translateY(-5px);
+}
+
+.category-image1 {
+  width: 100%;
+  height: 80%;
+}
+
+.category-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 12px;
+}
+
+.category-name {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Restaurants Section */
+.restaurants-section {
+  margin-bottom: 40px;
+}
+
+.restaurant-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+}
+.restaurant-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.restaurant-card1 {
+  background-color: #FC8A06;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  height: 220px;
+  width: 200px;
+  flex: 0 0 auto;
+}
+
+.restaurant-card1:hover {
+  transform: translateY(-5px);
+}
+
+.restaurant-image1 {
+  width: 100%;
+  height: 80%;
+}
+
+.restaurant-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.restaurant-name {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+
+}
+
+
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promotion-cards,
+  .category-cards,
+  .restaurant-cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
