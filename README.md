@@ -110,6 +110,6 @@ Projet réalisé avec ❤️ par :
 
 | Membre | Rôle Principal | Liens |
 | :--- | :--- | :--- |
-| **Youssef Barakat** | Full Stack Dev (Orders, Riders, Menus) | [GitHub](https://github.com/) |
-| **Abdellatif Ouhsaine** | Full Stack Dev (Restaurants, Auth) | [GitHub](https://github/Abdellatif-Ouhsaine.com/) |
+| **Youssef Barakat** | Full Stack Dev (Orders, Riders, Menus) | [GitHub](https://github.com/barakatyoussef) |
+| **Abdellatif Ouhsaine** | Full Stack Dev (Restaurants, Auth) | [GitHub](https://github.com/Abdellatif-Ouhsaine/) |
 | **Mouad Nourssedate** | Full Stack Dev (Reservations, Frontend UI) | |
