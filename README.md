@@ -103,7 +103,7 @@ npm install
 # Lancer l'application React
 npm start
 ```
-### 👥 L'Équipe (Dev Team)
+
 ## 👥 L'Équipe (Dev Team)
 
 Projet réalisé avec ❤️ par :
