@@ -93,7 +93,7 @@ php artisan migrate --seed
 php artisan serve
 ```
 ### 2. Configuration du Frontend (React)
-```
+```bash
 # Aller dans le dossier client
 cd frontend
 
